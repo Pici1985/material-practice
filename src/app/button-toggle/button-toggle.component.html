@@ -1,0 +1,19 @@
+<div class="mat-display-2 heading">Button Toggle component</div>
+
+<!-- Like a simple checkbox-->
+<!-- button can be disbled with the disabled attribute-->
+<div>
+    <mat-button-toggle #toggleButton > Toggle </mat-button-toggle>
+    {{ toggleButton.checked }}     
+</div>
+
+<!-- Like a simple radio button -->
+<!-- multiple attribute lets you select multiple elements -->
+<div>
+    <mat-button-toggle-group #toggleGroup="matButtonToggleGroup" multiple>
+        <mat-button-toggle value="angular"> Angular </mat-button-toggle>    
+        <mat-button-toggle value="react"> React </mat-button-toggle>    
+        <mat-button-toggle value="vue"> Vue </mat-button-toggle>    
+    </mat-button-toggle-group>
+    {{ toggleGroup.value }}    
+</div>

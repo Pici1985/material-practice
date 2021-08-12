@@ -1,0 +1,37 @@
+<div class="mat-display-2 heading">Menus component</div>
+
+<mat-menu #appMenu="matMenu" xPosition="before" yPosition="above">
+    <button mat-menu-item [matMenuTriggerFor]="subMenu">Frontend</button>    
+    <button mat-menu-item>Backend</button>    
+</mat-menu>
+
+<button class="center" mat-raised-button [matMenuTriggerFor]="appMenu">Menu</button>
+
+
+<mat-menu #subMenu="matMenu">
+    <button mat-menu-item>Angular</button>    
+    <button mat-menu-item>React</button>    
+    <button mat-menu-item>Vue</button>    
+</mat-menu>
+
+<mat-menu #lazyMenu="matMenu">
+    <ng-template matMenuContent let-name="name" let-hobby="hobby">
+        <button mat-menu-item>Settings </button>  
+        <button mat-menu-item>Hobby is {{hobby}} </button>  
+        <button mat-menu-item>Log out {{name}}</button>  
+    </ng-template>
+</mat-menu>
+
+<button 
+mat-raised-button 
+[matMenuTriggerData]="{name: 'Bazsi', hobby: 'coding'}" 
+[matMenuTriggerFor]="lazyMenu">
+    Bazsi
+</button>
+
+<button 
+    mat-raised-button 
+    [matMenuTriggerData]="{name: 'Ivi', hobby: 'Hamish'}" 
+    [matMenuTriggerFor]="lazyMenu">
+    Ivi
+</button>

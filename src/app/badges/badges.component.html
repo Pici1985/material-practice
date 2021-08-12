@@ -1,0 +1,44 @@
+<div class="mat-display-2 heading">Badges component</div>
+
+<!--Basic bagde default positioning-->
+<div>
+    <span matBadge="5">Notification</span>
+</div>
+<div>
+    <span matBadge="5" matBadgePosition="below before">Notification</span>
+</div>
+<div>
+    <span matBadge="5" matBadgePosition="below after" >Notification</span>
+</div>
+<div>
+    <span matBadge="5" matBadgePosition="above before" >Notification</span>
+</div>
+
+<!--Bagde sizing-->
+<div>
+    <span matBadge="5" matBadgePosition="above after" matBadgeSize="small">Notification</span>
+</div>
+<div>
+    <span matBadge="5" matBadgePosition="above after" matBadgeSize="medium">Notification</span>
+</div>
+<div>
+    <span matBadge="5" matBadgePosition="above after" matBadgeSize="large">Notification</span>
+</div>
+
+<!--Bagde coloring-->
+<div>
+    <span matBadge="5" matBadgePosition="above after" matBadgeSize="small" matBadgeColor="primary">Notification</span>
+</div>
+<div>
+    <span matBadge="5" matBadgePosition="above after" matBadgeSize="medium" matBadgeColor="accent">Notification</span>
+</div>
+<div>
+    <span matBadge="5" matBadgePosition="above after" matBadgeSize="large" matBadgeColor="warn" matBadgeOverlap="false">Notification</span>
+</div>
+
+<!-- property binding / conditional rendering-->
+<div>
+    <span [matBadge]="notifications" [matBadgeHidden]="notifications === 0">Notification</span>
+</div>
+
+
