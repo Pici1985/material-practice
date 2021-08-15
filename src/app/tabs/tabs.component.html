@@ -1,0 +1,8 @@
+<div class="mat-display-2 heading">Tabs component</div>
+
+<mat-tab-group #tabRef (selectedTabChange)="logChange(tabRef.selectedIndex)">
+    <mat-tab label="Angular">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi veritatis iusto eos nam nostrum quia amet aliquam quod deleniti pariatur illo, facere accusantium delectus molestiae expedita voluptates porro magnam nobis commodi quaerat sed? Vero perferendis illum harum dolor, corrupti eligendi?</mat-tab>
+    <mat-tab label="React">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ipsam assumenda praesentium totam, earum, exercitationem, cupiditate nostrum ullam facilis ex necessitatibus culpa accusantium officiis perferendis. Sequi rem maxime impedit eveniet nulla nam quis, a doloribus possimus quibusdam ullam iste similique.</mat-tab>
+    <mat-tab label="Vue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quaerat sunt voluptatem ad, dolore esse praesentium aliquam nihil placeat. Ea illo debitis, provident voluptate dignissimos officia neque pariatur delectus sequi quaerat, libero aut quis iste corrupti deserunt tempora cupiditate quidem.</mat-tab>
+</mat-tab-group>
+{{tabRef.selectedIndex}}

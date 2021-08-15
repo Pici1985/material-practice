@@ -1,0 +1,63 @@
+<div class="mat-display-2 heading">Expansion component</div>
+
+
+<!-- simple expansion panel-->
+<mat-expansion-panel>
+    <mat-expansion-panel-header>
+        <mat-panel-title>
+            Angular Fundamentals   
+        </mat-panel-title>   
+        <mat-panel-description>
+            Total duration: 3 hours   
+        </mat-panel-description>   
+    </mat-expansion-panel-header>
+    <mat-action-row style="display: flex; justify-content: space-between;">
+        <p>This is panel content. Add course details.</p>
+        <button mat-raised-button>Enroll</button>
+    </mat-action-row>        
+    <mat-action-row style="display: flex; justify-content: space-between;">
+        <p>This is more panel content.</p>
+        <button mat-raised-button>Enroll</button>
+    </mat-action-row>        
+</mat-expansion-panel>
+
+<!-- Accordion -->
+
+<mat-accordion multi="true" hideToggle>
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                React  
+            </mat-panel-title>   
+            <mat-panel-description>
+                Total duration: 24hours   
+            </mat-panel-description>   
+        </mat-expansion-panel-header>
+        <mat-action-row style="display: flex; justify-content: space-between;">
+            <p>This is panel content. Add course details.</p>
+            <button mat-raised-button>Enroll</button>
+        </mat-action-row>        
+        <mat-action-row style="display: flex; justify-content: space-between;">
+            <p>This is more panel content.</p>
+            <button mat-raised-button>Enroll</button>
+        </mat-action-row>        
+    </mat-expansion-panel>
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                Angular Material   
+            </mat-panel-title>   
+            <mat-panel-description>
+                Total duration: 2 hours   
+            </mat-panel-description>   
+        </mat-expansion-panel-header>
+        <mat-action-row style="display: flex; justify-content: space-between;">
+            <p>This is panel content. Add course details.</p>
+            <button mat-raised-button>Enroll</button>
+        </mat-action-row>        
+        <mat-action-row style="display: flex; justify-content: space-between;">
+            <p>This is more panel content.</p>
+            <button mat-raised-button>Enroll</button>
+        </mat-action-row>        
+    </mat-expansion-panel>
+</mat-accordion>

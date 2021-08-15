@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { MaterialModule } from './material/material.module';
 import { ButtonsComponent } from './buttons/buttons.component';
@@ -18,6 +18,13 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { MenusComponent } from './menus/menus.component';
 import { ListComponent } from './list/list.component';
 import { GridListComponent } from './grid-list/grid-list.component';
+import { ExpansionComponent } from './expansion/expansion.component';
+import { CardComponent } from './card/card.component';
+import { TabsComponent } from './tabs/tabs.component';
+import { StepperComponent } from './stepper/stepper.component';
+import { InputComponent } from './input/input.component';
+import { SelectComponent } from './select/select.component';
+import { AutocompleteComponent } from './autocomplete/autocomplete.component';
 
 @NgModule({
   declarations: [
@@ -31,14 +38,22 @@ import { GridListComponent } from './grid-list/grid-list.component';
     SidenavComponent,
     MenusComponent,
     ListComponent,
-    GridListComponent
+    GridListComponent,
+    ExpansionComponent,
+    CardComponent,
+    TabsComponent,
+    StepperComponent,
+    InputComponent,
+    SelectComponent,
+    AutocompleteComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
