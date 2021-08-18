@@ -1,0 +1,10 @@
+<div class="mat-display-2 heading">DatePicker component</div>
+
+<mat-form-field>
+    <input matInput [matDatepicker]="myDatePicker" [matDatepickerFilter]="dateFilter">
+    <mat-datepicker-toggle [for]="myDatePicker" matSuffix></mat-datepicker-toggle>
+    <mat-datepicker #myDatePicker startView="month"></mat-datepicker>
+</mat-form-field>
+
+<!-- startView determines what the calendar show on click, can be month,year, multi-year etc -->
+

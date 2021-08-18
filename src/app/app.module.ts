@@ -25,6 +25,14 @@ import { StepperComponent } from './stepper/stepper.component';
 import { InputComponent } from './input/input.component';
 import { SelectComponent } from './select/select.component';
 import { AutocompleteComponent } from './autocomplete/autocomplete.component';
+import { CheckboxComponent } from './checkbox/checkbox.component';
+import { RadioComponent } from './radio/radio.component';
+import { DatepickerComponent } from './datepicker/datepicker.component';
+import { TooltipComponent } from './tooltip/tooltip.component';
+import { SnackbarComponent } from './snackbar/snackbar.component';
+import { DialogComponent } from './dialog/dialog.component';
+import { DialogExampleComponent } from './dialog-example/dialog-example.component';
+import { TableComponent } from './table/table.component';
 
 @NgModule({
   declarations: [
@@ -45,8 +53,17 @@ import { AutocompleteComponent } from './autocomplete/autocomplete.component';
     StepperComponent,
     InputComponent,
     SelectComponent,
-    AutocompleteComponent
+    AutocompleteComponent,
+    CheckboxComponent,
+    RadioComponent,
+    DatepickerComponent,
+    TooltipComponent,
+    SnackbarComponent,
+    DialogComponent,
+    DialogExampleComponent,
+    TableComponent
   ],
+  entryComponents: [DialogExampleComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
